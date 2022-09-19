@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/16 19:02:57 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/16 19:43:48 by jingchen         ###   ########.fr       */
+/*   Created: 2022/09/16 19:46:41 by jingchen          #+#    #+#             */
+/*   Updated: 2022/09/16 19:50:28 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c -= 32);
+	if (c >= 'A' && c <= 'Z')
+		return (c += 32);
 	else
 		return (c);
 }
@@ -23,7 +23,6 @@ int	ft_toupper(int c)
 /*int main()
 {
 	int c = 'a';
-	printf("%c\n", ft_toupper(c));
-	printf("%c\n", toupper(c));
+	printf("%c\n", ft_tolower(c));
 	return 0;
 }*/

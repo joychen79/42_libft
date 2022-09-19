@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/16 19:02:57 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/16 19:43:48 by jingchen         ###   ########.fr       */
+/*   Created: 2022/09/19 17:04:58 by jingchen          #+#    #+#             */
+/*   Updated: 2022/09/19 17:40:33 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c -= 32);
-	else
-		return (c);
+	int	i;
+
+	i = 0;
+	while (i < n)
+	{
+		*(char *)(s + i) = '\0';
+		i++;
+	}
 }
 
 /*int main()
 {
-	int c = 'a';
-	printf("%c\n", ft_toupper(c));
-	printf("%c\n", toupper(c));
-	return 0;
+	char s[] = "heloorlkajfiiha";
+	ft_bzero(s, 0);
+	printf("%i,%i,%i,%c\n", s[0],s[1],s[2],s[9]);
+	return (0);
 }*/

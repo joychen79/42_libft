@@ -1,29 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/16 19:02:57 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/16 19:43:48 by jingchen         ###   ########.fr       */
+/*   Created: 2022/09/16 22:14:19 by jingchen          #+#    #+#             */
+/*   Updated: 2022/09/19 18:00:22 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c -= 32);
-	else
-		return (c);
+	int	i;
+
+	i = 0;
+	while (i < len)
+	{
+		*(char *)(b + i) = (unsigned char)c;
+		i++;
+	}
+	return (b);
 }
 
-/*int main()
+/*int main ()
 {
-	int c = 'a';
-	printf("%c\n", ft_toupper(c));
-	printf("%c\n", toupper(c));
-	return 0;
+	int c = '$';
+	char b[] = "01230hello";
+
+	printf("%s\n", ft_memset(b, c, 7));
+	return(0);
 }*/

@@ -6,7 +6,7 @@
 /*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 14:03:31 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/14 15:46:53 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/16 20:57:59 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_strlen(const char *str)
 	return (i);
 }
 
-size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	unsigned int	pos;
 	unsigned int	count;

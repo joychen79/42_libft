@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/16 19:02:57 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/16 19:43:48 by jingchen         ###   ########.fr       */
+/*   Created: 2022/09/16 19:51:09 by jingchen          #+#    #+#             */
+/*   Updated: 2022/09/19 18:58:53 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+char	*ft_strchr(const char *s, int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c -= 32);
-	else
-		return (c);
+	if (!*s)
+		return (0);
+	while (*s)
+	{
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
+	}
+	return (0);
 }
 
 /*int main()
 {
-	int c = 'a';
-	printf("%c\n", ft_toupper(c));
-	printf("%c\n", toupper(c));
-	return 0;
+	int c = 'm';
+	const char *str = "123\0mundo";
+	printf("%s\n", ft_strchr(str, c));
+	return (0);
 }*/
