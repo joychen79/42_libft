@@ -6,7 +6,7 @@
 /*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 18:59:44 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/19 19:59:22 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/23 19:10:19 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char dst[] = "ntreenn";
 	char src[] = "12345uihhee";
-	printf("%s\n", ft_memcpy(dst, src, 0));
+	printf("%s\n", ft_memcpy(dst, src, 8));
+	printf("%s\n", memcpy(dst, src, 8));
 	return 0;
 }*/
