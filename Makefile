@@ -18,7 +18,8 @@ SRC = ft_isalnum.c \
 	  ft_memchr.c \
 	  ft_memcmp.c \
 	  ft_memset.c \
-	  ft_atoi.c
+	  ft_atoi.c \
+	  ft_strnstr.c
 
 OBJ = $(SRC:.c=.o)
 %.o: %.c
