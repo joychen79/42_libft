@@ -6,16 +6,16 @@
 /*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:35:36 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/14 15:44:15 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/26 20:34:01 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	valor;
-	int	nb;
+	long			i;
+	int				valor;
+	long long int 	nb;
 
 	i = 0;
 	valor = 1;

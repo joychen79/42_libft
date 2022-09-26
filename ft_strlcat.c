@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 22:40:18 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/16 20:58:36 by jingchen         ###   ########.fr       */
+/*  Updated: 2022/09/26 18:37:32 by jingchen         ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 	i = 0;
 	y = 0;
 	x = 0;
+	if (dstsize == 0)
+		return (0);
 	while (dst[i] != '\0')
 	{
 		i++;

@@ -6,7 +6,7 @@
 /*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 22:14:19 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/21 18:03:00 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/23 22:37:56 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (i < len)

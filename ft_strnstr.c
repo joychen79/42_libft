@@ -1,34 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/19 18:02:36 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/26 19:53:23 by jingchen         ###   ########.fr       */
+/*   Created: 2022/09/26 20:34:40 by jingchen          #+#    #+#             */
+/*   Updated: 2022/09/26 20:37:52 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
-{
-	size_t	i;
 
-	i = 0;
-	while (i < n)
-	{
-		if (*(unsigned char *)(s + i) == (unsigned char)c)
-			return ((unsigned char *)(s + i));
-		i++;
-	}
-	return (0);
-}
-/*int main ()
-{
-	char s[] = "";
-	char c = 'l';
-	printf("%s\n", ft_memchr(s, c, 8));
-			return 0;
-}*/
