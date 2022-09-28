@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 18:15:25 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/26 18:29:59 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/28 18:59:27 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	if (!n)
 		return (0);
-	return (*(unsigned char*)s1 - *((unsigned char *)s2));
+	return (*(unsigned char *)s1 - *((unsigned char *)s2));
 }
 /*int main()
 {

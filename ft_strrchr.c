@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 21:01:25 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/16 22:11:31 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/28 18:08:44 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strrchr(const char *s, int c)
 	const char	*begin;
 
 	begin = s;
-	if (!*s)
-		return (0);
 	while (*s)
 		s++;
 	while (s != begin)

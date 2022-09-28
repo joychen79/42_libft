@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 18:47:13 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/26 20:17:25 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/28 21:12:40 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,23 @@
 
 void	*ft_memmove(void *dst, const void*src, size_t len)
 {
+	char	*dest;
+	char	*source;
+
+	dest = (char *)dst;
+	source = (char *)src;
 	if (dst == src)
-	return (dst);
-
-	while (len--)
+		return (dst);
+	if (dst > src)
 	{
-		if (dst > src)
-			{
-			*(unsigned char *)(dst + len) = *(unsigned const char *)(src + len);
-			}
-		
-		else
+		while (len--)
 		{
-			*(unsigned char *)(dst++) = *(unsigned const char *)(src++);
+			*(dest + len) = *(source + len);
 		}
+		return (dst);
 	}
-
+	while (len--)
+		*(dest++) = *(source++);
 	return (dst);
 }
 /*int main()

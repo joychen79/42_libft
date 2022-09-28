@@ -3,26 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 14:03:31 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/23 22:16:20 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/28 18:50:15 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{	
-		i++;
-	}
-	return (i);
-}
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -45,8 +33,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 /*int	main ()
 {
-	char src[] = "mundo";
-	
+	char src[] = "mundo";	
 	char dest[] = "ho";
 
 	printf("%zu\n", ft_strlcpy(dest, src, 3));

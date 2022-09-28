@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:35:36 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/26 20:34:01 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/28 18:34:35 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_atoi(const char *str)
 {
 	long			i;
 	int				valor;
-	long long int 	nb;
+	int				nb;
 
 	i = 0;
 	valor = 1;
