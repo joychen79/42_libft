@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 20:34:40 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/28 19:11:48 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/28 21:55:41 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (!haystack && !needle)
+	if ((!haystack && !needle) || !len)
 		return (0);
 	if (*needle == '\0' || !needle)
 		return ((char *)haystack);
