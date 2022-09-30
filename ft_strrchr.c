@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 21:01:25 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/28 18:08:44 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/09/30 18:05:33 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,17 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const char	*begin;
+	int	i;
 
-	begin = s;
-	while (*s)
-		s++;
-	while (s != begin)
+	i = 0;
+	while (s[i])
+		i++;
+	while (i >= 0)
 	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s--;
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
+		i--;
 	}
-	if (*s == c)
-		return ((char *)s);
 	return (0);
 }
 
