@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 22:08:08 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/30 16:49:07 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/10/05 19:05:26 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strdup(const char *s1);
 void	*ft_calloc(size_t count, size_t size);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif
