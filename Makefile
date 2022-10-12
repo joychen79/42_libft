@@ -31,7 +31,8 @@ SRC = ft_strlen.c  \
 	  ft_strmapi.c \
 	  ft_substr.c \
 	  ft_itoa.c \
-	  ft_strjoin.c
+	  ft_strjoin.c \
+	  ft_strtrim.c
 
 OBJ = $(SRC:.c=.o)
 %.o: %.c
