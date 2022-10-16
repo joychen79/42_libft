@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 22:08:08 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/12 12:30:54 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/10/16 16:14:23 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_itoa(int n);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-
+char	**ft_split(char const *s, char c);
 
 #endif
