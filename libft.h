@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 22:08:08 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/16 16:14:23 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/10/16 17:34:44 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,13 @@
 # include <unistd.h>
 # include <string.h>
 # include <ctype.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+t_list	*ft_lstnew(void *content);
 
 size_t	ft_strlen(const char *s);
 int		ft_atoi(const char *str);

@@ -34,13 +34,19 @@ SRC = ft_strlen.c  \
 	  ft_strjoin.c \
 	  ft_strtrim.c \
 	  ft_split.c 
+	
+BONUS_SRC = ft_lstnew.c
 
 OBJ = $(SRC:.c=.o)
+BONUS_SRC= $(BONUS_SRC:.C=.O)
 %.o: %.c
 	@gcc $(FLAG) -c $< -o $@
 all: $(SRC) $(OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@echo "$(NAME) created"
+
+bonus: $(BONUS_OBJS)
+	ar rcs $(NAME) $?	
 clean:
 	@rm -f $(OBJ)
 fclean: clean
@@ -49,4 +55,5 @@ re: fclean all
 so:
 	@gcc -nostartfiles -c -fPIC $(FLAG) $(SRC)
 	@gcc -nostartfiles -shared -o libft.so $(OBJ)
+rebonus: fclean bonus
 .PHONY: all, clean, fclean, re

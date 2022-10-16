@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 20:15:46 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/11 16:43:35 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/10/16 16:30:37 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
+
+/*int main(void)
+{
+	char s[] = "hola que tal como estas";
+	printf("sibstring is; %s\n", ft_substr(s, 3, 7));
+	return (0);
+}*/
