@@ -35,10 +35,12 @@ SRC = ft_strlen.c  \
 	  ft_strtrim.c \
 	  ft_split.c 
 	
-BONUS_SRC = ft_lstnew.c
+BONUS_SRC = ft_lstnew.c \
+			ft_lstadd_front.c \
+			ft_lstsize.c 
 
 OBJ = $(SRC:.c=.o)
-BONUS_SRC= $(BONUS_SRC:.C=.O)
+BONUS_OBJS= $(BONUS_SRC:.c=.o)
 %.o: %.c
 	@gcc $(FLAG) -c $< -o $@
 all: $(SRC) $(OBJ)

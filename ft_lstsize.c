@@ -1,35 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/16 16:36:20 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/16 17:49:19 by jingchen         ###   ########.fr       */
+/*   Created: 2022/10/16 19:28:32 by jingchen          #+#    #+#             */
+/*   Updated: 2022/10/16 19:43:26 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+int	ft_lstsize(t_list *lst)
 {
-	t_list	*new;
+	size_t	i;
 
-	new = malloc(sizeof(t_list));
-	if (!new)
-		return (NULL);
-	new -> content = content;
-	new -> next = NULL;
-	return (new);
+	i = 0;
+	while (lst)
+	{
+		lst = lst -> next;
+		i++;
+	}
+	return (i);
 }
 
-/*int main ()
+/*int main()
 {
-	t_list *s;
-	char num[] = "1, 2, 3, 4";
-	s = ft_lstnew(num);
-		printf("%s\n", s -> content);
-		s = s->next;
-	return 0;
+	t_list *a;
+	t_list *b;
+	t_list *c;
+	char d[20] = "hola";
+	char e[20] = "numdo";
+	char f[20] = "hey";
+
+	a = ft_lstnew(d);
+	b = ft_lstnew(e);
+	c = ft_lstnew(f);
+	a -> next = b;
+	b -> next = c;
+	c -> next = NULL;
+
+	printf("%d\n", ft_lstsize(a));
+	return (0);
 }*/
