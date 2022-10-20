@@ -33,7 +33,9 @@ SRC = ft_strlen.c  \
 	  ft_itoa.c \
 	  ft_strjoin.c \
 	  ft_strtrim.c \
-	  ft_split.c 
+	  ft_split.c \
+	  ft_lstlast.c \
+	  ft_lstadd_back.c
 	
 BONUS_SRC = ft_lstnew.c \
 			ft_lstadd_front.c \
@@ -43,9 +45,11 @@ OBJ = $(SRC:.c=.o)
 BONUS_OBJS= $(BONUS_SRC:.c=.o)
 %.o: %.c
 	@gcc $(FLAG) -c $< -o $@
-all: $(SRC) $(OBJ)
-	@ar rc $(NAME) $(OBJ)
-	@echo "$(NAME) created"
+all: $(NAME)
+
+$(NAME):	$(SRC) $(OBJ)
+			@ar rc $(NAME) $(OBJ)
+			@echo "$(NAME) created"
 
 bonus: $(BONUS_OBJS)
 	ar rcs $(NAME) $?	

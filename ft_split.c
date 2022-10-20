@@ -25,7 +25,7 @@ static size_t	count_word(char const *s, char c)
 		{
 			count++;
 			while (s[i] && s[i] != c)
-			i++;
+				i++;
 		}
 		else
 			i++;
@@ -73,5 +73,6 @@ char	**ft_split(char const *s, char c)
 	}
 	printf("table is %s\n", table);
 	printf("original is %s\n", s);
+	system("leaks -q a.out");
 	return (0);
 }*/

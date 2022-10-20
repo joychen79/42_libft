@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 18:32:02 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/16 19:25:24 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/10/20 17:15:39 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 
 /*int main()
 {
-	t_list **lst;
+	//t_list **lst;
 	t_list *s1;
 	t_list *s2;
 	char a[20] = "mundo"; 
