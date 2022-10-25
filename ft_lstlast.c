@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:26:27 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/20 19:49:28 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/10/25 19:35:41 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	/*if (lst == NULL)
-		return (0);*/
-	while (lst && lst -> next)
-	{
-		lst = lst -> next;
-	}
+	if (lst == NULL)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
 	return (lst);
 }
+/*int main ()
+{
+	system ("leaks -q a.out");
+}*/

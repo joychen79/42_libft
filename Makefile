@@ -35,7 +35,9 @@ SRC = ft_strlen.c  \
 	  ft_strtrim.c \
 	  ft_split.c \
 	  ft_lstlast.c \
-	  ft_lstadd_back.c
+	  ft_lstadd_back.c \
+	  ft_lstdelone.c \
+	  ft_lstclear.c
 	
 BONUS_SRC = ft_lstnew.c \
 			ft_lstadd_front.c \
