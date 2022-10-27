@@ -37,7 +37,9 @@ SRC = ft_strlen.c  \
 	  ft_lstlast.c \
 	  ft_lstadd_back.c \
 	  ft_lstdelone.c \
-	  ft_lstclear.c
+	  ft_lstclear.c \
+	  ft_lstiter.c \
+	  ft_lstmap.c  
 	
 BONUS_SRC = ft_lstnew.c \
 			ft_lstadd_front.c \
@@ -56,7 +58,7 @@ $(NAME):	$(SRC) $(OBJ)
 bonus: $(BONUS_OBJS)
 	ar rcs $(NAME) $?	
 clean:
-	@rm -f $(OBJ)
+	@rm -f $(OBJ) $(BONUS_OBJS)
 fclean: clean
 	@rm -f $(NAME)
 re: fclean all
