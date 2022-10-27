@@ -33,17 +33,17 @@ SRC = ft_strlen.c  \
 	  ft_itoa.c \
 	  ft_strjoin.c \
 	  ft_strtrim.c \
-	  ft_split.c \
-	  ft_lstlast.c \
-	  ft_lstadd_back.c \
-	  ft_lstdelone.c \
-	  ft_lstclear.c \
-	  ft_lstiter.c \
-	  ft_lstmap.c  
+	  ft_split.c 
 	
 BONUS_SRC = ft_lstnew.c \
 			ft_lstadd_front.c \
-			ft_lstsize.c 
+			ft_lstsize.c \
+			ft_lstlast.c \
+			ft_lstadd_back.c \
+			ft_lstdelone.c \
+			ft_lstclear.c \
+			ft_lstiter.c \
+			ft_lstmap.c  
 
 OBJ = $(SRC:.c=.o)
 BONUS_OBJS= $(BONUS_SRC:.c=.o)
@@ -55,8 +55,8 @@ $(NAME):	$(SRC) $(OBJ)
 			@ar rc $(NAME) $(OBJ)
 			@echo "$(NAME) created"
 
-bonus: $(BONUS_OBJS)
-	ar rcs $(NAME) $?	
+bonus: $(BONUS_OBJS) $(OBJ)
+	ar rcs $(NAME) $^
 clean:
 	@rm -f $(OBJ) $(BONUS_OBJS)
 fclean: clean
