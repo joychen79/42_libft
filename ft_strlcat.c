@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 22:40:18 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/30 16:48:24 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/10/29 17:50:46 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	y;
 	size_t	x;
 
-	if (!dst && dstsize == 0)
-		return (0);
 	i = ft_strlen(dst);
 	y = ft_strlen(src);
+	if (!dst && dstsize == 0)
+		return (y);
 	x = 0;
 	if (i >= dstsize)
 		return (y + dstsize);

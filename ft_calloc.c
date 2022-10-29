@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 21:29:40 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/07 20:06:05 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/10/29 18:51:56 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,13 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(new, (count * size));
 	return (new);
 }
+
+/*int main ()
+{
+	char *ptr;
+	ptr = (char *)ft_calloc(10, sizeof(char));
+	printf("%p\n", ptr);
+	free(ptr);
+	ptr = NULL;
+	return(0);
+}*/

@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 20:15:46 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/16 16:30:37 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/10/29 19:52:50 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
-	size_t	i;
 
 	if (!s)
 		return (0);
@@ -26,13 +25,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub = malloc(sizeof(char) * (len + 1));
 	if (!sub)
 		return (0);
-	i = 0;
-	while (i < len)
-	{
-		ft_memmove (sub, (s + start), len);
-		i++;
-	}
-	sub[i] = '\0';
+	ft_memmove (sub, (s + start), len);
+	sub[len] = '\0';
 	return (sub);
 }
 
