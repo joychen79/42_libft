@@ -60,19 +60,3 @@ char	**ft_split(char const *s, char c)
 	table[i] = 0;
 	return (table);
 }
-
-/*int main(void)
-{
-	char s[50] = "hola munhdo que h tal";
-	char c = ' ';
-	char **table = ft_split(s, c);
-	while(*table)
-	{
-		printf("role is %s\n", *table);
-		++table;
-	}
-	printf("table is %s\n", table);
-	printf("original is %s\n", s);
-	system("leaks -q a.out");
-	return (0);
-}*/

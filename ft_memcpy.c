@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 18:59:44 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/27 17:33:28 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:30:30 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*int main ()
-{
-	char dst[50] = "a\0b\0c";
-	char src[50] = "12345ui\0hhee";
-	ft_print_memory(dst, 128);
-//	dst = 0;
-	printf("%s\n", ft_memcpy(dst, src, 12));
-	ft_print_memory(dst, 128);
-	printf("%s\n", memcpy(dst, src, 12));
-	ft_print_memory(dst, 128);
-	return 0;
-}*/

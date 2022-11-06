@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 15:56:30 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/29 18:59:22 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:31:31 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,13 +47,3 @@ char	*ft_strdup(const char *s1)
 		ft_strlcpy (target, s1, (ft_strlen(s1) + 1));
 	return (target);
 }
-/*int	main ()
-{
-	char *src = "hola mundo";
-	char *target = ft_strdup(src);
-	printf("%s\n %p\n", src, src);
-	printf("%s\n %p\n", target, target);
-	free(target);
-	target = NULL;
-	return (0);
-}*/

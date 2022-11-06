@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 17:55:09 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/28 18:42:17 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:30:25 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*int main()
-{
-	int	s1[] = {1, 2, 7};
-	int	s2[] = {1, 2, 3};
-
-	printf("%d\n", ft_memcmp(s1, s2, 12));
-	printf("%d\n", memcmp(s1, s2, 12));
-
-	return 0;
-}*/

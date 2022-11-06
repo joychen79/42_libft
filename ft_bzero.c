@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 17:04:58 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/23 22:11:30 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:37:41 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-/*int main()
-{
-	char s[] = "heloorlkajfiiha";
-	ft_bzero(s, 0);
-	printf("%i,%i,%i,%c\n", s[0],s[1],s[2],s[9]);
-	return (0);
-}*/

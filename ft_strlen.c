@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 11:21:22 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/28 20:07:08 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:32:33 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-/*int	main(void)
-{
-	char *c = "ubteiteiteiññ122";
-	printf ("%d\n", ft_strlen(c));
-	printf ("%lu\n", strlen(c));
-	return (0);
-}*/

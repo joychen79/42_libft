@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 19:02:57 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/16 19:43:48 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:33:21 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
-/*int main()
-{
-	int c = 'a';
-	printf("%c\n", ft_toupper(c));
-	printf("%c\n", toupper(c));
-	return 0;
-}*/

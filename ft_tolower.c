@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 19:46:41 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/16 19:50:28 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:33:14 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,3 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-
-/*int main()
-{
-	int c = 'a';
-	printf("%c\n", ft_tolower(c));
-	return 0;
-}*/

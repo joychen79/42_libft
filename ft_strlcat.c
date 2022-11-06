@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 22:40:18 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/29 17:50:46 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:31:45 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	return (i + y);
 }
-
-/*int main ()
-{
-	char	a[] = "xxxxxxx";
-	char	b[] = "ffffhhhhhh";
-	printf("%zu\n", ft_strlcat(a, b, 8));	
-	printf("%lu\n", strlcat(a, b, 8));
-	return(0);
-}*/

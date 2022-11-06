@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 18:02:36 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/26 19:53:23 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:30:16 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-/*int main ()
-{
-	char s[] = "";
-	char c = 'l';
-	printf("%s\n", ft_memchr(s, c, 8));
-			return 0;
-}*/

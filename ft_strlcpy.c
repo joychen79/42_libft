@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 14:03:31 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/28 18:50:15 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:32:27 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (count);
 }
-
-/*int	main ()
-{
-	char src[] = "mundo";	
-	char dest[] = "ho";
-
-	printf("%zu\n", ft_strlcpy(dest, src, 3));
-	printf("%s\n", dest);
-	printf("%zu\n", strlcpy(dest, src, 3));
-	printf("%s\n", dest);
-	return (0);
-}*/

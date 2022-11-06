@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 18:35:36 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/28 18:34:35 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:27:42 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,3 @@ int	ft_atoi(const char *str)
 	}
 	return (nb * valor);
 }
-
-/*int main()
-{
-	printf("%d\n", ft_atoi("-123"));
-	printf("%d\n", atoi("-123"));
-	return(0);
-}*/

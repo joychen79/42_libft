@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 21:01:25 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/16 16:27:48 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:33:02 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, (end - start) + 1));
 }
-
-/*int main(void)
-{
-	char s1[] = "hola hola mundo que tal hol";
-	char set[] = "hol";
-
-	printf("newstring is %s\n", ft_strtrim(s1, set));
-	return (0);
-}*/

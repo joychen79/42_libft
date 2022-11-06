@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:26:27 by jingchen          #+#    #+#             */
-/*   Updated: 2022/10/25 19:35:41 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:29:04 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,3 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
-/*int main ()
-{
-	system ("leaks -q a.out");
-}*/

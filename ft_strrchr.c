@@ -6,7 +6,7 @@
 /*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 21:01:25 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/30 18:05:33 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:32:56 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-
-/*int main ()
-{
-	int c = 'h';
-   const char str[] = "hello whorld";
-	printf("%s\n", ft_strrchr(str, c));
-	return (0);
-}*/

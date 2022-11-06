@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 17:58:13 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/13 18:44:17 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:38:35 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -18,11 +17,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-/*#include<ctype.h>
-
-int main()
-{
-	printf("%d\n", ft_isprint('\n'));
-	printf("%d\n", isprint('\n'));
-	return(0);
-}*/

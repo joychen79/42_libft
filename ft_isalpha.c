@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 19:06:51 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/21 16:42:37 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:37:54 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
 int	ft_isalpha(int c)
 {
@@ -18,12 +17,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-/*#include<ctype.h>
-
-int main()
-{
-	int	c = 245;
-	printf("%d\n", ft_isalpha(c));
-	printf("%d\n", isalpha(c));
-	return (0);
-}*/

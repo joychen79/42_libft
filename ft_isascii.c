@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jingchen <jingchen@student.42madrid>       +#+  +:+       +#+        */
+/*   By: jingchen <jingchen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 17:25:50 by jingchen          #+#    #+#             */
-/*   Updated: 2022/09/13 19:05:30 by jingchen         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:38:54 by jingchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -18,14 +17,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-
-/*#include<stdio.h>
-#include<ctype.h>
-
-int main ()
-{
-	printf("%d\n", ft_isascii(244));
-	printf("%d\n", isascii(244));
-
-	return(0);
-}*/
